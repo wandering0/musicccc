@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<link type="text/css" href="../css/bootstrap.css" rel="stylesheet" />
+		<link type="text/css" href="../css/myPro.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/public.js"></script>
+		
+	</head>
+
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="../index.html">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="myMusic.html">我的音乐</a>
+						</li>
+
+						<li>
+							<a href="player.html">音乐播放</a>
+						</li>
+						<li class="pull-right">
+							<a type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="loginAndRegister">登录/注册</a>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--导航-->
+
+		<!--模态框-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<button class="modal-title btn btn-info" id="login">登录</button>
+						<button class="modal-title btn btn-info" id="register">注册</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">用户名:</label>
+								<input type="text" class="form-control" id="recipient-name" />
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">密码:</label>
+								<input type="text" class="form-control" id="message-text" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" id="btn_loginOrRe">登录</button>
+
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框-->
+
+		<div class="container">
+			<!--搜索-->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6" style="margin-top: 40px;">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<button type="submit" class="btn btn-default">搜索</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+
+			<!--搜索-->
+			<!--结果列表-->
+			<div class="row">
+				<ul class="nav nav-tabs">
+					<li class="active" id="musics">
+						<a>歌曲</a>
+					</li>
+					<li id="singers">
+						<a>歌手</a>
+					</li>
+				</ul>
+				<div class="table-responsive">
+					<table class="table table-hover" ">
+						<tbody>
+							<tr>
+								<td>
+									<a href="# ">第一首歌</a>
+								</td>
+								<td>3`12`</td>
+								<td>
+									<a href="# ">小明</a>
+								</td>
+								<td>
+									<a href="# ">某专辑</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="# ">第一首歌</a>
+								</td>
+								<td>3`12`</td>
+								<td>
+									<a href="# ">小明</a>
+								</td>
+								<td>
+									<a href="# ">某专辑</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="# ">第一首歌</a>
+								</td>
+								<td>3`12`</td>
+								<td>
+									<a href="# ">小明</a>
+								</td>
+								<td>
+									<a href="# ">某专辑</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="# ">夜空中最暗的星</a>
+								</td>
+								<td>3`12`</td>
+								<td>
+									<a href="# ">张杰</a>
+								</td>
+								<td>
+									<a href="# ">某专辑</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--结果列表-->
+			<nav aria-label="... " class="pull-right ">
+					<ul class="pagination ">
+						<li class="disabled ">
+							<span>
+        						<span aria-hidden="true ">&laquo;</span>
+							</span>
+						</li>
+						<li class="active ">
+							<span>1 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>2 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>3 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>4 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li class="disabled ">
+							<span>
+        						<span aria-hidden="true ">&raquo;</span>
+							</span>
+						</li>
+
+					</ul>
+				</nav>
+
+		</div>
+
+		<footer class="navbar-fixed-bottom ">
+			<div class="container ">
+				<div class="col-md-12 ">
+					<p>HITWH软件工程设计</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

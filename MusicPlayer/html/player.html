@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<link type="text/css" href="../css/bootstrap.css" rel="stylesheet" />
+		<link type="text/css" href="../css/myPro.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/public.js"></script>
+
+		<script>
+			$(function() {
+				$("#more").click(function() {
+					if($("#more").text() == "展示")
+						$("#more").text("隐藏")
+					else
+						$("#more").text("展示")
+					$("#flag_more").toggle();
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="../index.html">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="myMusic.html">我的音乐</a>
+						</li>
+
+						<li class="active">
+							<a href="#">音乐播放</a>
+						</li>
+						<li class="pull-right">
+							<a type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="loginAndRegister">登录/注册</a>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" action="searchReasult.html">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--导航-->
+
+		<!--模态框-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<button class="modal-title btn btn-info" id="login">登录</button>
+						<button class="modal-title btn btn-info" id="register">注册</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">用户名:</label>
+								<input type="text" class="form-control" id="recipient-name" />
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">密码:</label>
+								<input type="text" class="form-control" id="message-text" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" id="btn_loginOrRe">登录</button>
+
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框-->
+
+		<div class="container">
+			<div class="col-md-10">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-2" style="padding: 0px;padding-top: 35px;">
+						<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" style="border-radius: 50%;" />
+					</div>
+					<div class="col-md-9">
+						<div class="row center" style="padding-top: 20px;">
+							<p style="font-size: 22px;color: brown;"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;&nbsp;歌曲名</p>
+						</div>
+						<div class="row controlMusicBtn" style="margin-bottom: 20px">
+							<button class="btn btn-primary">
+									<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+									播放
+							</button>
+							<button class="btn btn-primary">
+									<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+									暂停
+							</button>
+							<button class="btn btn-danger">
+									<span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+									上一首
+							</button>
+							<button class="btn btn-danger">
+									<span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+									下一首
+							</button>
+						</div>
+						<div class="row">
+							<div>
+								作曲 : 陈雪凝<br>作词 : 陈雪凝<br>编曲：Dadz<br>若不是你突然闯进我生活<br>我怎会把死守的寂寞放任了<br>说不痛苦那是假的<br>毕竟我的心也是肉做的<br>你离开时我心里的彩虹<br>就变成灰色<br>说不心酸那是假的<br>如果我真的没那么爱过<br>爱着一个没有灵魂的人<br>世界都是黑色<br>
+								<div id="flag_more" style="display: none;">若不是你突然闯进 我生活<br>我怎会把死守的寂寞 放任了<br>爱我的话你都说<br>爱我的事你不做<br>我却把甜言蜜语当做你爱我的躯壳<br>你的悲伤难过我不参破<br>我也会把曾经的且过 当施舍<br>不去计较你太多<br>从此你在我心里<br>只剩绿色<br>说很快活那是假的<br>你的名字依然那么深刻<br>每个字都刺穿我的心脏<br>那鲜明的痛是红色<br>若不是你突然闯进 我生活<br>我怎会把死守的寂寞 放任了<br>爱我的话你都说<br>爱我的事你不做<br>我却把甜言蜜语当做你爱我的躯壳<br>你的悲伤难过我不参破<br>我也会把曾经的且过 当施舍<br>不去计较你太多<br>从此你在我心里<br>只剩绿色<br>呼～<br>若不是你突然闯进 我生活<br>我怎会把死守的寂寞 放任了<br>爱我的话你都说<br>爱我的事你不做<br>我却把甜言蜜语当做你爱我的躯壳<br>若不是你突然闯进 我生活<br>我怎会把死守的寂寞 放任了<br>爱我的话你都说<br>爱我的事你不做<br>我却把甜言蜜语当做你爱我的躯壳<br>你的悲伤难过我不参破<br>我也会把曾经的且过 当施舍<br>若不是你突然闯进 我生活<br>我怎会把死守的寂寞 放任了<br>爱我的话你都说<br>爱我的事你不做<br>我却把甜言蜜语当做你爱我的躯壳<br>和声：李美灵芝<br>混音：一曲不空<br>发行：3SEVEN叁七<br></div>
+								<a id="more">展示</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--评论区-->
+				<div class="page-header" style="color: orangered; border-bottom-color: red;border-bottom-width: 3px;">
+					<h4>评论：</h4>
+				</div>
+				<!--发表评论内容-->
+				<div class="row">
+					<div class="col-md-1">
+						<img src="http://p4.music.126.net/nWe8ef3gJhMwc4-VuEi3YQ==/109951163213221082.jpg?param=50y50" style="margin-top: 15px;" />
+					</div>
+					<div class="col-md-10">
+						<form action="#">
+							<div class="form-group">
+								<textarea class="form-control" id="text1" rows="10" cols="10" placeholder="请输入内容"></textarea>
+								<button type="submit" class="btn btn-default pull-right" style="margin-top: 10px;">评论</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--发表评论内容-->
+				<div class="media well">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">名称</h4>
+						<p>这首歌真好听,这首歌真好听,这首歌真好听</p>
+					</div>
+				</div>
+				<div class="media well">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">名称</h4>
+						<p>我喜欢这个小姐姐</p>
+					</div>
+				</div>
+				<div class="media well">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">名称</h4>
+						<p>这首歌真好听,这首歌真好听,这首歌真好听</p>
+					</div>
+				</div>
+
+				<nav aria-label="... " class="pull-right ">
+					<ul class="pagination ">
+						<li class="disabled ">
+							<span>
+        						<span aria-hidden="true ">&laquo;</span>
+							</span>
+						</li>
+						<li class="active ">
+							<span>1 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>2 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>3 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li>
+							<span>4 <span class="sr-only ">(current)</span></span>
+						</li>
+						<li class="disabled ">
+							<span>
+        						<span aria-hidden="true ">&raquo;</span>
+							</span>
+						</li>
+
+					</ul>
+				</nav>
+
+				<!--评论区-->
+			</div>
+			<div class="col-md-2" style="border-left-color: red; border-left-style: dotted;">
+				<div class="page-header">
+					<p style="font-size: 20px;color: orangered;">包含这首歌的歌单</p>
+				</div>
+				<ol>
+					<li>分类一</li>
+					<li>分类二</li>
+					<li>分类三</li>
+
+				</ol>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container ">
+				<div class="col-md-12 ">
+					<p>HITWH软件工程设计</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>
