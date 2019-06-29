@@ -1,10 +1,11 @@
 var script = document.createElement("script");
 script.type = "text/javascript";
-script.src = "/js/jquery-2.1.0.js";
+script.src = "jquery-2.1.0.js"
 
 document.getElementsByTagName('head')[0].appendChild(script);
 
 $(document).ready(function() {
+
 	$("#login").click(function() {
 		$("#btn_loginOrRe").text("登录")
 		$("#confirmPwd").remove()
@@ -19,4 +20,30 @@ $(document).ready(function() {
 		if($(".modal-body").find("form").children().length < 3)
 			$(".modal-body").find("form").append(formGroup)
 	})
+
+	$("#playerBtn").click(
+		function () {
+			// $("#playerBar").stop(true).animate({
+			// 	height: '50px',
+			// }, 1000);
+			$("#playerBar").css("background-color","yellow")
+
+	})
+
+	$("#mouseBlock").mouseover(
+		function(){
+			$("#playerBar").stop(true).animate({
+				height:'50px'
+			},1000)
+		}
+	);
+
+	$("#playerBar").mouseleave(
+		function(){
+			$("#playerBar").stop(true).animate({
+				height:'0px'
+			},1000)
+		}
+	);
+
 });
