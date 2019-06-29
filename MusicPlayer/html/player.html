@@ -25,7 +25,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body style="background-color: #f5f5f5;">
 		<!--导航-->
 		<nav class="navbar navbar-inverse">
 			<div class="container">
@@ -103,14 +103,13 @@
 		</div>
 		<!--模态框-->
 
-		<div class="container">
-			<div class="col-md-10">
+		<div class="container" style="width: 980px; border-color: #a9a9a9; border-style: solid; border-width: 1px; border-top: none; border-bottom: none; background-color: #ffffff;">
+			<div class="col-md-10" style="width: 709px; margin-left: -5px;">
 				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-2" style="padding: 0px;padding-top: 35px;">
+					<div class="col-md-2" style="margin-left:20px;margin-top:20px;padding-left: 37.5px; padding-top: 36.5px;width: 206px;height:205px;background-image: url(../img/timg.jpg); background-size: 204px 204px;">
 						<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" style="border-radius: 50%;" />
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9" style="margin-left:30px;margin-top:20px;width: 414px;">
 						<div class="row center" style="padding-top: 20px;">
 							<p style="font-size: 22px;color: brown;"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;&nbsp;歌曲名</p>
 						</div>
@@ -150,13 +149,13 @@
 				<!--发表评论内容-->
 				<div class="row">
 					<div class="col-md-1">
-						<img src="http://p4.music.126.net/nWe8ef3gJhMwc4-VuEi3YQ==/109951163213221082.jpg?param=50y50" style="margin-top: 15px;" />
+						<img src="../img/default_avatar.jpg" style="margin-top: 5px;margin-left: 10px;width: 50px;height: 50px;" />
 					</div>
 					<div class="col-md-10">
 						<form action="#">
 							<div class="form-group">
-								<textarea class="form-control" id="text1" rows="10" cols="10" placeholder="请输入内容"></textarea>
-								<button type="submit" class="btn btn-default pull-right" style="margin-top: 10px;">评论</button>
+								<textarea class="form-control" id="text1" rows="10" cols="10" placeholder="请输入内容" style="height: 63px; width: 595px;margin-left: 15px;"></textarea>
+								<button type="submit" class="btn btn-default pull-right" style="margin-top: 10px; margin-right: -40px;">评论</button>
 							</div>
 						</form>
 					</div>
@@ -165,7 +164,7 @@
 				<div class="media well">
 					<div class="media-left media-middle">
 						<a href="#">
-							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+							<img src="../img/default_avatar.jpg" />
 						</a>
 					</div>
 					<div class="media-body">
@@ -176,7 +175,7 @@
 				<div class="media well">
 					<div class="media-left media-middle">
 						<a href="#">
-							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+							<img src="../img/default_avatar.jpg" />
 						</a>
 					</div>
 					<div class="media-body">
@@ -187,7 +186,7 @@
 				<div class="media well">
 					<div class="media-left media-middle">
 						<a href="#">
-							<img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130" />
+							<img src="../img/default_avatar.jpg" />
 						</a>
 					</div>
 					<div class="media-body">
@@ -196,7 +195,7 @@
 					</div>
 				</div>
 
-				<nav aria-label="... " class="pull-right ">
+				<nav aria-label="... " class="pull-right " style="margin-bottom:25px;">
 					<ul class="pagination ">
 						<li class="disabled ">
 							<span>
@@ -226,20 +225,65 @@
 
 				<!--评论区-->
 			</div>
-			<div class="col-md-2" style="border-left-color: red; border-left-style: dotted; height: 1200px;">
+			<div class="col-md-2" style="border-left-color: #a9a9a9; border-left-style: dotted;border-left-width: 1.5px; width:255px;height: 1075px; margin-right: -20px;">
 				<div class="page-header">
-					<p style="font-size: 20px;color: orangered;">包含这首歌的歌单</p>
+					<p style="font-size: 18px;color: orangered;">包含这首歌的歌单</p>
 				</div>
-				<ol>
-					<li>分类一</li>
-					<li>分类二</li>
-					<li>分类三</li>
-
-				</ol>
+				
+				<ul style="margin-left: -30px;">
+					<li>
+						<div style="width: 50px;height: 50px;">
+							<a title="歌单1">
+								<img src="http://p2.music.126.net/jdyzy07-z6ate0QP77ab5A==/18744474232194487.jpg?param=50y50">
+							</a>
+						</div>
+						<div class="info" style="width: 100px; margin-top: -50px; margin-left: 65px;">
+							<p>
+								<a title="歌单1" style="font-size: 1.3em; color: #333;">歌单1</a>
+							</p>
+							<p style="margin-top:-5px">
+								<span style="color: #808080;">by</span>
+								<a title="XXX" style="font-size: 0.8em; color: #808080;">XXX</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div style="width: 50px;height: 50px;">
+							<a title="歌单1">
+								<img src="http://p2.music.126.net/jdyzy07-z6ate0QP77ab5A==/18744474232194487.jpg?param=50y50">
+							</a>
+						</div>
+						<div class="info" style="width: 100px; margin-top: -50px; margin-left: 65px;">
+							<p>
+								<a title="歌单2" style="font-size: 1.3em; color: #333;">歌单2</a>
+							</p>
+							<p style="margin-top:-5px">
+								<span style="color: #808080;">by</span>
+								<a title="XXX" style="font-size: 0.8em; color: #808080;">XXX</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div style="width: 50px;height: 50px;">
+							<a title="歌单1">
+								<img src="http://p2.music.126.net/jdyzy07-z6ate0QP77ab5A==/18744474232194487.jpg?param=50y50">
+							</a>
+						</div>
+						<div class="info" style="width: 100px; margin-top: -50px; margin-left: 65px;">
+							<p>
+								<a title="歌单3" style="font-size: 1.3em; color: #333;">歌单3</a>
+							</p>
+							<p style="margin-top:-5px">
+								<span style="color: #808080;">by</span>
+								<a title="XXX" style="font-size: 0.8em; color: #808080;">XXX</a>
+							</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 
-		<footer>
+		<footer style="height: 90px;">
 			<div class="container ">
 				<div class="col-md-12 ">
 					<p>HITWH软件工程设计</p>
