@@ -16,11 +16,13 @@
 
     <script>
         $(document).ready(function () {
-            $('.carousel').carousel({
-                interval: 2000
-            })
-            $(".list-group-item").children().attr("href", "html/player.html")
-            $(".btn.btn-default").attr("href", "html/player.html")
+            // var myAudio = document.getElementById("audio");
+            // myAudio.play()
+            // $('.carousel').carousel({
+            //     interval: 2000
+            // })
+            // $(".list-group-item").children().attr("href", "html/player.html")
+            // $(".btn.btn-default").attr("href", "./pl")
 
             $('#loginAndRegister').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget) // Button that triggered the modal
@@ -45,6 +47,9 @@
                 if ($(".modal-body").find("form").children().length < 3)
                     $(".modal-body").find("form").append(formGroup)
             })
+
+
+
         });
     </script>
 
@@ -70,13 +75,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active" id="bar">
+                <li id="mainPageBar">
                     <a href="html/mainPage.html" target="content">首页 <span class="sr-only">(current)</span></a>
                 </li>
-                <li id="bar">
+                <li id="musicBar" >
                     <a href="html/myMusic.html" target="content">我的音乐</a>
                 </li>
-                <li id="bar">
+                <li id="playerMusicBar">
                     <a href="html/player.html" target="content">音乐播放</a>
                 </li>
                 <li class="pull-right">
@@ -149,7 +154,7 @@
     <div class="col-md-6">
         <img src="http://p2.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=130y130"
              style="width: 30px;height: 30px;margin-bottom: 30px;margin-right: 10px"/>
-        <audio controls style="height: 40px;width: 450px;margin-top: 5px">
+        <audio id="audio" controls style="height: 40px;width: 450px;margin-top: 5px">
             <source src="0312943ea3d8cba0b6bc8f64e4478759.mp3">
         </audio>
     </div>

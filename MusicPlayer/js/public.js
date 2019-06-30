@@ -6,6 +6,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 $(document).ready(function() {
 
+
 	$("#login").click(function() {
 		$("#btn_loginOrRe").text("登录")
 		$("#confirmPwd").remove()
@@ -22,11 +23,8 @@ $(document).ready(function() {
 	})
 
 	$("#playerBtn").click(
+
 		function () {
-			// $("#playerBar").stop(true).animate({
-			// 	height: '50px',
-			// }, 1000);
-			$("#playerBar").css("background-color","yellow")
 
 	})
 

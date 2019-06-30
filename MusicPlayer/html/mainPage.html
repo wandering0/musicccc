@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" class="g_html">
 
 <head>
-    <title>MusicPlayer</title>
+    <title>mainPage</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Cache-Control" content="no-transform"/>
@@ -12,39 +12,22 @@
     <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/public.js"></script>
+    <link rel="stylesheet" href="../layui/css/layui.css?t=1560414887305" media="all">
 
 
     <script>
         $(document).ready(function () {
+
+            // $("#musicBar").addClass("active")
+
             $('.carousel').carousel({
                 interval: 2000
             })
-            $(".list-group-item").children().attr("href", "html/player.html")
-            $(".btn.btn-default").attr("href", "html/player.html")
+            $(".list-group-item").children().attr({target:"content",
+                href:"player.html"})
 
-            $('#loginAndRegister').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget) // Button that triggered the modal
-                var recipient = button.data('whatever') // Extract info from data-* attributes
-                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-                var modal = $(this)
-                modal.find('.modal-title').text('登录')
-                //					modal.find('.modal-body input').val(recipient)
-            })
-            $("#login").click(function () {
-                $("#btn_loginOrRe").text("登录")
-                $("#confirmPwd").remove()
-            })
-            $("#register").click(function () {
-                $("#btn_loginOrRe").text("注册")
-                var formGroup = '<div class="form-group" id="confirmPwd">' +
-                    '<label for="message-text" class="control-label">确认密码:</label>' +
-                    '<input type="text" class="form-control" id="message-text"/>' +
-                    '</div>'
-
-                if ($(".modal-body").find("form").children().length < 3)
-                    $(".modal-body").find("form").append(formGroup)
-            })
+            $(".btn.btn-default").attr({target:"content",
+                href:"player.html"})
         });
     </script>
 
